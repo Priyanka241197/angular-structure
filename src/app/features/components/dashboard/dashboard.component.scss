@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+  }
+  
+  .sidebar {
+    min-width: 250px;
+    background: #fff;
+    color: #141414;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .list-unstyled {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+  }
+  
+  .sidebar a:hover {
+    background: #007bff;
+    color: #0f0f0f;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  

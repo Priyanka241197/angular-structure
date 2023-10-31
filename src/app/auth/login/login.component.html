@@ -1,0 +1,54 @@
+<!-- <div class="card shadow card-holder">
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <p-panel header="Login">
+        <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid mt-3" style="margin: 10px 0px">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-2">
+                    Email:
+                </div>
+                <div class="ui-grid-col-6">
+                    <input pInputText type="text" formControlName="login" class="form-control" name="login">
+                </div>
+                <div class="ui-grid-col-4">
+                    <div [hidden]="loginForm.controls['login'].valid || !loginForm.controls['login'].dirty" class="alert alert-danger">
+                        Login is required
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-2">
+                    Password:
+                </div>
+                <div class="ui-grid-col-6">
+                    <input pInputText type="password" formControlName="password" class="form-control" name="password">
+                </div>
+                <div class="ui-grid-col-4">
+                    <div [hidden]="loginForm.controls['password'].valid || !loginForm.controls['password'].dirty" class="alert alert-danger">
+                        Password is required
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="login-btn">
+                    <button pButton type="submit" label="Submit" [disabled]="!loginForm.valid"></button>
+                </div>
+                <div class="ui-grid-col-4"></div>
+            </div>
+        </div>
+    </p-panel>
+</form>
+</div> -->
+<div class="card shadow border-0">
+    <h2 class="card-title text-center">Login</h2>
+    <form #loginForm="ngForm" class="m-4" (ngSubmit)="onSubmit(loginForm)">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" ngModel required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" ngModel required class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary login-btn mt-4 mb-5">Submit</button>
+    </form>
+</div>

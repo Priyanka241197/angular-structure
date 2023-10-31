@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
+.sidebar, .main-content {
+    min-height: 100vh;
+  }
+
+.p-button{
+    width: inherit !important;
+    min-height: 40px !important;
+    background-color: rgb(86, 86, 199) !important;
+    padding: 5px !important;
+    color : #fff;
+    border: 2px solid rgb(86, 86, 199);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.p-panel-header{
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+} 
+
